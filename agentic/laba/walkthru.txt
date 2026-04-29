@@ -94,7 +94,16 @@ agent.py: https://github.com/BalericaAI/kubernetesclass/blob/main/agentic/laba/p
 
 I) Dockerfile
 
-This Dockerfile: 
+This Dockerfile:  https://github.com/BalericaAI/kubernetesclass/blob/main/agentic/laba/docker/dockerfile.txt
+
+J) Build and Push Image
+
+gcloud builds submit \
+  --tag gcr.io/PROJECT_ID/vertex-agent:lab1a
+
+K) Agent Deployment
+
+vertex-agent-deployment.yaml: 
 
 
 
