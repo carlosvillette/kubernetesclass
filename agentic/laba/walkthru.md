@@ -1,4 +1,6 @@
 Vertex AI Single Agent on GKE
+
+
 Mantra: “The AI is not Kubernetes. The AI is not magic. The AI is being used as a reasoning step inside a normal cloud-native system.”
 Secret Point: “Your code is the agent. Vertex AI is the reasoning engine. Kubernetes is the environment.”
 
