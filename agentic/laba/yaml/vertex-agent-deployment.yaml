@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vertex-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vertex-agent
+  template:
+    metadata:
+      labels:
+        app: vertex-agent
+    spec:
+      serviceAccountName: vertex-agent-ksa
+      containers:
+      - name: vertex-agent
+        image: gcr.io/PROJECT_ID/vertex-agent:lab1a
+        env:
+        - name: PROJECT_ID
+          value: "PROJECT_ID"
+        - name: LOCATION
+          value: "us-central1"
+        - name: TARGET_DEPLOYMENT
+          value: "broken-app"
+        - name: TARGET_NAMESPACE
+          value: "default"
