@@ -1,4 +1,10 @@
-variable "project_id" {}
+variable "project_id" {
+    type    = string
+    default = "Your Lizzo Project ID"
+}
+
+
+
 variable "region" {
   default = "us-central1"
 }
