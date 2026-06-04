@@ -96,6 +96,11 @@ H) Agent Python Code
 You need this: pip install google-genai
 
 agent.py: https://github.com/BalericaAI/kubernetesclass/blob/main/agentic/laba/python/agent.py
+In the same folder as agent.py, please create a .env file with the following: 
+https://github.com/BalericaAI/kubernetesclass/blob/main/agentic/laba/python/env.txt
+
+MAke sure your project value is YOURs not mine.
+
 
 I) Dockerfile
 
